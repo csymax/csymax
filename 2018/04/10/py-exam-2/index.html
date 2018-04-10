@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Python," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="最近要申暑期实习，在牛客、赛码上做了一些真题，在这里将其中一部分错题做个整理。   第一题小东和其他小朋友正在玩一个关于选举的游戏。选举是通过投票的方式进行的，得票最多的人将获胜。小东是编号为1的候选者，此外还有其他的候选者参加选举。根据初步的调查情况，所有准备投票的小朋友都有一定的投票倾向性，小东如果要获得胜利，必须争取部分准备为其他候选人投票的小朋友。由于小东的资源较为有限，她希望用最小的代价">
+<meta name="keywords" content="Python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【Python学习笔记】几道笔试题（2）">
+<meta property="og:url" content="http://yoursite.com/2018/04/10/py-exam-2/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="最近要申暑期实习，在牛客、赛码上做了一些真题，在这里将其中一部分错题做个整理。   第一题小东和其他小朋友正在玩一个关于选举的游戏。选举是通过投票的方式进行的，得票最多的人将获胜。小东是编号为1的候选者，此外还有其他的候选者参加选举。根据初步的调查情况，所有准备投票的小朋友都有一定的投票倾向性，小东如果要获得胜利，必须争取部分准备为其他候选人投票的小朋友。由于小东的资源较为有限，她希望用最小的代价">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-04-10T07:30:18.151Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="【Python学习笔记】几道笔试题（2）">
+<meta name="twitter:description" content="最近要申暑期实习，在牛客、赛码上做了一些真题，在这里将其中一部分错题做个整理。   第一题小东和其他小朋友正在玩一个关于选举的游戏。选举是通过投票的方式进行的，得票最多的人将获胜。小东是编号为1的候选者，此外还有其他的候选者参加选举。根据初步的调查情况，所有准备投票的小朋友都有一定的投票倾向性，小东如果要获得胜利，必须争取部分准备为其他候选人投票的小朋友。由于小东的资源较为有限，她希望用最小的代价">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/04/10/py-exam-2/"/>
+
+
+
+
+
+  <title>【Python学习笔记】几道笔试题（2） | Hexo</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Hexo</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/10/py-exam-2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">【Python学习笔记】几道笔试题（2）</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-10T14:18:06+08:00">
+                2018-04-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>最近要申暑期实习，在牛客、赛码上做了一些真题，在这里将其中一部分错题做个整理。  </p>
+<h3 id="第一题"><a href="#第一题" class="headerlink" title="第一题"></a>第一题</h3><p>小东和其他小朋友正在玩一个关于选举的游戏。选举是通过投票的方式进行的，得票最多的人将获胜。<br>小东是编号为1的候选者，此外还有其他的候选者参加选举。根据初步的调查情况，所有准备投票的小朋友都有一定的投票倾向性，小东如果要获得胜利，必须争取部分准备为其他候选人投票的小朋友。由于小东的资源较为有限，她希望用最小的代价赢得胜利，请你帮忙计算她最少需要争取的选票数。<br>输入：<br>输入有若干组，每组包含两行，第一行为一个正整数n（2&lt;=n&lt;=100），表示候选者的数量，第二行为每个候选人预期得到的选票数，以空格分开，每人的预期得票数在1到1000之间（包含1和1000）。<br>经过小东的争取后，可能出现候选人得票数为0或超过1000的情况。<br>输出：<br>对每组测试数据，单独输出一行，内容为小东最少需要争取的选票数。<br>样例输入：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">5</span>  </span><br><span class="line"><span class="number">5</span> <span class="number">1</span> <span class="number">11</span> <span class="number">2</span> <span class="number">8</span>  </span><br><span class="line"><span class="number">4</span>  </span><br><span class="line"><span class="number">1</span> <span class="number">8</span> <span class="number">8</span> <span class="number">8</span>  </span><br><span class="line"><span class="number">2</span>  </span><br><span class="line"><span class="number">7</span> <span class="number">6</span></span><br></pre></td></tr></table></figure></p>
+<p>样例输出：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">4</span>  </span><br><span class="line"><span class="number">6</span>  </span><br><span class="line"><span class="number">0</span></span><br></pre></td></tr></table></figure></p>
+<p>尝试：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> <span class="keyword">True</span>:  </span><br><span class="line">    n = int(raw_input())  </span><br><span class="line">    s = map(int, raw_input().split())  </span><br><span class="line">    s0 = s[<span class="number">0</span>]  </span><br><span class="line">    s1 = s[<span class="number">0</span>]  </span><br><span class="line">    s[<span class="number">0</span>] = <span class="number">0</span>  </span><br><span class="line">    <span class="keyword">while</span> max(s)&gt;=s1:  </span><br><span class="line">        maxIndex = s.index(max(s))  </span><br><span class="line">        add = (max(s) - s1)//<span class="number">2</span> + <span class="number">1</span>  </span><br><span class="line">        s1 += add  </span><br><span class="line">        s[maxIndex] -= add  </span><br><span class="line">    print(str(s1-s0))</span><br></pre></td></tr></table></figure></p>
+<p>思路：将小东初始选票存为s0，当前选票存为s1，并把s[0]置为0防止max函数取到。接下来判断s中是否有超过s1的值，如果有则将该值减少与s1的差的一半加一，s1增加与最大值的差的一半加一。<br>算法未能跑通所有测试用例。<br>分析：当s中最大值与s1的差是奇数时，如7，差地板除2再加1等于4，s1超过当前最大值；当s中最大值与s1的差是偶数时，如8，差地板除2再加1等于5，s1超过当前最大值。但考虑到最大值是动态变化的，一次调整得过大会造成最大值减小过快，远远低于第二大的值，因此应每次仅加减1，即可保证不出错。<br>修改：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> <span class="keyword">True</span>:  </span><br><span class="line">    n = int(raw_input())  </span><br><span class="line">    s = map(int, raw_input().split())  </span><br><span class="line">    s0 = s[<span class="number">0</span>]  </span><br><span class="line">    s1 = s[<span class="number">0</span>]  </span><br><span class="line">    s[<span class="number">0</span>] = <span class="number">0</span>  </span><br><span class="line">    <span class="keyword">while</span> max(s)&gt;=s1:  </span><br><span class="line">        maxIndex = s.index(max(s))  </span><br><span class="line">        s1 += <span class="number">1</span>  </span><br><span class="line">        s[maxIndex] -= <span class="number">1</span>  </span><br><span class="line">    print(str(s1-s0))</span><br></pre></td></tr></table></figure></p>
+<h3 id="第二题"><a href="#第二题" class="headerlink" title="第二题"></a>第二题</h3><p>有5个人ABCDE排队，排好后他们决定重新排队，每个人都不在原来的位置上，那么总共有多少种排法？<br>解：n个人每个人都不站在原来的位置的方法数有f(n)=n!(1/2!-1/3!+1/4!+..+(-1)^n*1/n!)，代入n=5，解为44.  </p>
+<h3 id="第三题"><a href="#第三题" class="headerlink" title="第三题"></a>第三题</h3><p>小明买了一些彩色的气球用绳子串在一条线上，想要装饰房间，每个气球都染上了一种颜色，每个气球的形状都是各不相同的。我们用1到9一共9个数字表示不同的颜色，如12345则表示一串5个颜色各不相同的气球串。但小明希望得到不出现重复颜色的气球串，那么现在小明需要将这个气球串剪成多个较短的气球串，小明一共有多少种剪法？如原气球串12345的一种是剪法是剪成12和345两个气球串。<br>注意每种剪法需满足最后的子串中气球颜色各不相同（如果满足该条件，允许不剪，即保留原串）。两种剪法不同当且仅当存在一个位置，在一种剪法里剪开了，而在另一种中没剪开。详见样例分析。<br>输入：<br>第一行输入一个正整数n（1≤n≤100000），表示气球的数量。<br>第二行输入n个整数a1，a2，a3…an，ai表示该气球串上第i个气球的颜色。对于任意i，有1≤ai≤9。<br>输出：<br>输出一行，第一行输出一个整数，表示满足要求的剪法，输出最终结果除以1000000007后的余数。<br>尝试：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">cal</span><span class="params">(n)</span>:</span>  </span><br><span class="line">    res = <span class="number">1</span>  </span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, n):  </span><br><span class="line">        resTemp = <span class="number">1</span>  </span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> range(i):  </span><br><span class="line">            resTemp = resTemp*(n-j<span class="number">-1</span>)/(j+<span class="number">1</span>)  </span><br><span class="line">        res = res+int(resTemp)  </span><br><span class="line">    <span class="keyword">return</span> res  </span><br><span class="line">  </span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:  </span><br><span class="line">    n = int(raw_input())  </span><br><span class="line">    nArr = list(map(int, raw_input().split()))  </span><br><span class="line">    res = <span class="number">1</span>  </span><br><span class="line">    resTemp = []  </span><br><span class="line">    lastEle = nArr[<span class="number">0</span>]  </span><br><span class="line">    lastLen = <span class="number">1</span>  </span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> nArr[<span class="number">1</span>:]:  </span><br><span class="line">        <span class="keyword">if</span> i != lastEle:  </span><br><span class="line">            lastEle = i  </span><br><span class="line">            lastLen = lastLen+<span class="number">1</span>  </span><br><span class="line">        <span class="keyword">else</span>:  </span><br><span class="line">            res = res*cal(lastLen)  </span><br><span class="line">            lastLen = <span class="number">1</span>  </span><br><span class="line">    res = res*cal(lastLen)  </span><br><span class="line">    print(str(res))</span><br></pre></td></tr></table></figure></p>
+<p>思路：因为相同元素不能存在于同一子串中，因此所有相邻的相同元素间都需要切开。切开后计算前一子串可分割的更小子串数，所有结果相乘，即为总的可能分割数。具体方法是遍历气球串数组，如果两相同元素相邻，就在此处切开，计算前一部分可分割的子串数（cal函数）并与已有结果相乘，继续遍历，直到尾部。遍历完成后计算尾部子串可继续分割子串数并与已有结果相乘。<br>结果未能跑通所有测试用例。<br>分析：对于12332这种类型的情况，该方法能得出正确结果；如果用例变为32332，该方法只会在33中间切一刀，之后分别计算两子串可分割数并相乘。而实际上前一子串已有3这个元素，不能将3再放入其中。<br>修改：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:  </span><br><span class="line">    n = int(raw_input())  </span><br><span class="line">    nArr = list(map(int, raw_input().split()))  </span><br><span class="line">    dp = [<span class="number">1</span>]  </span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, n+<span class="number">1</span>):  </span><br><span class="line">        col = [<span class="number">0</span> <span class="keyword">for</span> j <span class="keyword">in</span> range(<span class="number">10</span>)]  </span><br><span class="line">        d = <span class="number">0</span>  </span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> range(<span class="number">1</span>, i+<span class="number">1</span>):  </span><br><span class="line">            col[nArr[i-j]] = col[nArr[i-j]]+<span class="number">1</span>  </span><br><span class="line">            <span class="keyword">if</span> col[nArr[i-j]]&gt;<span class="number">1</span>:  </span><br><span class="line">                <span class="keyword">break</span>  </span><br><span class="line">            d = d+dp[i-j]  </span><br><span class="line">        dp.append(d)  </span><br><span class="line">    print(dp[<span class="number">-1</span>]%<span class="number">1000000007</span>)</span><br></pre></td></tr></table></figure></p>
+<p>思路：构造数组dp，dp[i]表示遍历到位置i时满足条件的划分数。计算i+1时向前遍历dp，直到遍历到某一位置k使得包含k后不满足条件，此时dp[i+1]的值为数组dp[k]到dp[i]的连加。外层循环遍历n，最坏情况下内层循环由1至n，根据欧拉公式，时间复杂度为o(nlogn)。</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Python/" rel="tag"># Python</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/04/10/js-exam-1/" rel="next" title="【JavaScript学习笔记】几道笔试题（1）">
+                <i class="fa fa-chevron-left"></i> 【JavaScript学习笔记】几道笔试题（1）
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/04/10/py-exam-3/" rel="prev" title="【Python学习笔记】几道笔试题（3）">
+                【Python学习笔记】几道笔试题（3） <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">John Doe</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">tags</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#第一题"><span class="nav-number">1.</span> <span class="nav-text">第一题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第二题"><span class="nav-number">2.</span> <span class="nav-text">第二题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第三题"><span class="nav-number">3.</span> <span class="nav-text">第三题</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">John Doe</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
