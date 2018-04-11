@@ -1,93 +1,27 @@
 <!DOCTYPE html>
-
-
-
-  
-
-
 <html class="theme-next muse use-motion" lang="zh-CN">
 <head>
-  <meta charset="UTF-8"/>
+<meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="theme-color" content="#222">
-
-
-
-
-
-
-
-
-
 <meta http-equiv="Cache-Control" content="no-transform" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
-
-
-
-
-
-
+<link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-
 <link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
-
-
-
-
-
-  <meta name="keywords" content="Hexo, NexT" />
-
-
-
-
-
-
-
-
-
-
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+<link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+<meta name="keywords" content="Hexo, NexT" />
 <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+<meta property="og:title" content="Orangecsy's Blog">
+<meta property="og:url" content="https://orangecsy.github.io">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:locale" content="default">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
-
-
 
 <script type="text/javascript" id="hexo.configurations">
   var NexT = window.NexT || {};
@@ -113,34 +47,13 @@
   };
 </script>
 
-
-
-  <link rel="canonical" href="http://yoursite.com/archives/"/>
-
-
-
-
-
-  <title>orangecsy的博客</title>
-  
-
-
-
-
-
-
-
-
+<link rel="canonical" href="http://yoursite.com/"/>
+<title>orangecsy的博客</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="default">
-
-  
-  
-    
-  
-
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left 
+  page-home">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -213,223 +126,688 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
 
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
 
-      <span class="archive-page-counter">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/10/js-TwoWayDataBinding/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/10/js-TwoWayDataBinding/" itemprop="url">【JavaScript学习笔记】自己实现双向绑定</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-10T16:19:02+08:00">
+                2018-04-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
         
           
-        
-        Um..! 5 posts in total. Keep on posting.
-      </span>
+            <p>参考：<a href="https://segmentfault.com/a/1190000006599500" target="_blank" rel="noopener">剖析Vue原理&amp;实现双向绑定MVVM</a>和<a href="https://www.cnblogs.com/kidney/p/6052935.html?utm_source=gold_browser_extension" target="_blank" rel="noopener">Vue.js双向绑定的实现原理</a>。<br>1、通过Object.defineProperty(obj, prop, descriptor)劫持对象的属性读写，其中obj是要在上面定义属性的对象，prop是要定义或修改的属性名称，descriptor是属性的描述符。描述符中可选get和set键值。get是属性的getter方法，返回属性值；set为setter方法，接受唯一参数，并将该参数的值赋值给属性，get和set的默认值均为undefined。<br>2、双向绑定的简单实现。<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"input"</span> <span class="attr">id</span>=<span class="string">"input"</span>&gt;</span>  </span><br><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">"show"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span>  </span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined">  </span></span><br><span class="line"><span class="undefined">    var obj = &#123;&#125;;  </span></span><br><span class="line"><span class="undefined">    Object.defineProperty(obj, 'txt', &#123;  </span></span><br><span class="line"><span class="undefined">        get: function () &#123;  </span></span><br><span class="line"><span class="undefined">            return obj;  </span></span><br><span class="line"><span class="undefined">        &#125;,  </span></span><br><span class="line"><span class="undefined">        set: function (newValue) &#123;  </span></span><br><span class="line"><span class="undefined">            document.getElementById('input').value = newValue;  </span></span><br><span class="line"><span class="undefined">            document.getElementById('show').innerHTML = newValue;  </span></span><br><span class="line"><span class="undefined">        &#125;  </span></span><br><span class="line"><span class="undefined">    &#125;);  </span></span><br><span class="line"><span class="undefined">    document.getElementById('input').addEventListener('keyup', function (e) &#123;  </span></span><br><span class="line"><span class="undefined">        obj.txt = e.target.value;  </span></span><br><span class="line"><span class="undefined">    &#125;);  </span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>当通过input进行输入时，obj.txt的值会相应更新；当通过控制台改变obj.txt的值时，setter会改变view，从而实现了view=&gt;model，model=&gt;view的双向绑定。不过这种简单绑定不会真正执行obj.txt = e.target.value，obj永远为{}，如果在set方法中赋值obj.txt = e.target.value，则会造成无限循环。为解决这个问题，将Object.defineProperty()封装为一个函数，即可在其中保存状态obj.txt，修改如下：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">id</span>=<span class="string">"input"</span>&gt;</span>  </span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"show"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span>  </span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined">  </span></span><br><span class="line"><span class="undefined">    function defineProperty(obj, attr)&#123;  </span></span><br><span class="line"><span class="undefined">        var val;  </span></span><br><span class="line"><span class="undefined">        Object.defineProperty(obj, attr, &#123;  </span></span><br><span class="line"><span class="undefined">            get: function () &#123;  </span></span><br><span class="line"><span class="undefined">                return val;  </span></span><br><span class="line"><span class="undefined">            &#125;,  </span></span><br><span class="line"><span class="undefined">            set: function (newValue) &#123;  </span></span><br><span class="line"><span class="undefined">                if (newValue === val)&#123;  </span></span><br><span class="line"><span class="undefined">                    return;  </span></span><br><span class="line"><span class="undefined">                &#125;  </span></span><br><span class="line"><span class="undefined">                val = newValue;  </span></span><br><span class="line"><span class="undefined">                document.getElementById("input").value = newValue;  </span></span><br><span class="line"><span class="undefined">                document.getElementById("show").innerHTML = newValue;  </span></span><br><span class="line"><span class="undefined">            &#125;  </span></span><br><span class="line"><span class="undefined">        &#125;);  </span></span><br><span class="line"><span class="undefined">    &#125;  </span></span><br><span class="line"><span class="undefined">  </span></span><br><span class="line"><span class="undefined">    var obj = &#123;&#125;;  </span></span><br><span class="line"><span class="undefined">    defineProperty(obj, "txt");  </span></span><br><span class="line"><span class="undefined">    document.getElementById("input").addEventListener("keyup", function(e)&#123;  </span></span><br><span class="line"><span class="undefined">        obj.txt = e.target.value;  </span></span><br><span class="line"><span class="undefined">    &#125;)  </span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>上面就是一个最简单的双向绑定，但要实现类似于Vue的功能还需要继续改进。<br>3、model=&gt;view绑定<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">'app'</span>&gt;</span>  </span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">v-model</span>=<span class="string">"input"</span>&gt;</span>  </span><br><span class="line">    &#123;&#123;text&#125;&#125;  </span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">compile</span>(<span class="params">node, vm</span>)</span>&#123;  </span><br><span class="line">    <span class="keyword">if</span>(node.nodeType === <span class="number">1</span>)&#123;  </span><br><span class="line">        <span class="keyword">var</span> attr = node.attributes;  </span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">let</span> i = <span class="number">0</span>; i&lt;attr.length; i++)&#123;  </span><br><span class="line">            <span class="keyword">if</span>(attr[i].nodeName === <span class="string">'v-model'</span>)&#123;  </span><br><span class="line">                <span class="keyword">let</span> name = attr[i].nodeValue;  </span><br><span class="line">                node.value = vm.data[name];  </span><br><span class="line">                node.removeAttribute(<span class="string">'v-model'</span>);  </span><br><span class="line">            &#125;  </span><br><span class="line">        &#125;  </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="keyword">if</span>(node.nodeType === <span class="number">3</span>)&#123;  </span><br><span class="line">        <span class="keyword">let</span> reg = <span class="regexp">/\&#123;\&#123;(.*)\&#125;\&#125;/</span>;  </span><br><span class="line">        <span class="keyword">if</span>(reg.test(node.nodeValue))&#123;  </span><br><span class="line">            <span class="keyword">let</span> name = <span class="built_in">RegExp</span>.$<span class="number">1</span>;  </span><br><span class="line">            name = name.trim();  </span><br><span class="line">            node.nodeValue = vm.data[name];  </span><br><span class="line">        &#125;  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">nodeToFragment</span>(<span class="params">node, vm</span>)</span>&#123;  </span><br><span class="line">    <span class="keyword">var</span> flag = <span class="built_in">document</span>.createDocumentFragment();  </span><br><span class="line">    <span class="keyword">var</span> child;  </span><br><span class="line">    <span class="keyword">while</span>(child = node.firstChild)&#123;  </span><br><span class="line">        compile(child, vm);  </span><br><span class="line">        flag.appendChild(child);  </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="keyword">return</span> flag;  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Vue</span>(<span class="params">options</span>)</span>&#123;  </span><br><span class="line">    <span class="keyword">var</span> id = options.el;  </span><br><span class="line">    <span class="keyword">this</span>.data = options.data;  </span><br><span class="line">    <span class="keyword">var</span> dom = nodeToFragment(<span class="built_in">document</span>.getElementById(id), <span class="keyword">this</span>);  </span><br><span class="line">    <span class="built_in">document</span>.getElementById(id).appendChild(dom);  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="keyword">var</span> vm = <span class="keyword">new</span> Vue(&#123;  </span><br><span class="line">    el: <span class="string">'app'</span>,  </span><br><span class="line">    data: &#123;  </span><br><span class="line">        input: <span class="string">'hello'</span>,  </span><br><span class="line">        text: <span class="string">'world'</span>  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>实现功能：通过Vue实例vm的el属性查找作用范围，范围内input节点中有v-model属性时，将input的值改为vm下data对应键的值，当检测到双花括号时，将该位置替换为vm下data对应属性的值。<br>vm通过new关键字声明，构造函数Vue中将el确定的节点及vm自身传入nodeToFragment函数，之后再将当前子节点替换为nodeToFragment函数返回的DocumentFragment对象。nodeToFragment函数将当前节点的子节点逐个传入编译函数compile，并将编译好的节点添加到DocumentFragment对象返回。编译函数compile()判断当前节点类型，节点为元素时，判断是否有v-model属性，并替换input.value，当节点为文本时，利用正则表达式判断是否含有双花括号，并查找括号内对应的值替换该节点。<br>存在的问题：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">'app'</span>&gt;</span>  </span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>&#123;&#123;text&#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span>  </span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>当双花括号节点不是app的子节点时，无法编译。解决方法是在compile()函数中，当节点为元素节点时，判断其是否有子节点，有则再次调用compile函数。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">compile</span>(<span class="params">node, vm</span>)</span>&#123;  </span><br><span class="line">    <span class="keyword">if</span>(node.nodeType === <span class="number">1</span>)&#123;  </span><br><span class="line">        <span class="keyword">var</span> attr = node.attributes;  </span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">let</span> i = <span class="number">0</span>; i&lt;attr.length; i++)&#123;  </span><br><span class="line">            <span class="keyword">if</span>(attr[i].nodeName === <span class="string">'v-model'</span>)&#123;  </span><br><span class="line">                <span class="keyword">let</span> name = attr[i].nodeValue;  </span><br><span class="line">                node.value = vm[name];  </span><br><span class="line">                node.removeAttribute(<span class="string">'v-model'</span>);  </span><br><span class="line">            &#125;  </span><br><span class="line">        &#125;  </span><br><span class="line">        <span class="keyword">if</span> (child = node.firstChild) &#123;  </span><br><span class="line">            compile(child, vm);  </span><br><span class="line">        &#125;  </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="keyword">if</span>(node.nodeType === <span class="number">3</span>)&#123;  </span><br><span class="line">        <span class="keyword">let</span> reg = <span class="regexp">/\&#123;\&#123;(.*)\&#125;\&#125;/</span>;  </span><br><span class="line">        <span class="keyword">if</span>(reg.test(node.nodeValue))&#123;  </span><br><span class="line">            <span class="keyword">let</span> name = <span class="built_in">RegExp</span>.$<span class="number">1</span>;  </span><br><span class="line">            name = name.trim();  </span><br><span class="line">            node.nodeValue = vm.data[name];  </span><br><span class="line">        &#125;  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>4、view=&gt;model绑定<br>依照2中方法，先将vm下data中所有值通过Object.defineProperty()赋值，之后在编译函数compile()中为所有v-model添加事件监听，改动部分如下。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">observe</span>(<span class="params">data, vm</span>)</span>&#123;  </span><br><span class="line">    <span class="built_in">Object</span>.keys(data).forEach(<span class="function"><span class="keyword">function</span>(<span class="params">key</span>)</span>&#123;  </span><br><span class="line">        <span class="built_in">Object</span>.defineProperty(vm, key, &#123;  </span><br><span class="line">            get: <span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123;  </span><br><span class="line">                <span class="keyword">return</span> vm[key];  </span><br><span class="line">            &#125;,  </span><br><span class="line">            set: <span class="function"><span class="keyword">function</span> (<span class="params">newValue</span>)</span>&#123;  </span><br><span class="line">                <span class="built_in">document</span>.getElementById(<span class="string">"show"</span>).innerHTML = newValue;  </span><br><span class="line">                <span class="built_in">document</span>.getElementById(<span class="string">"input"</span>).value = newValue;  </span><br><span class="line">            &#125;  </span><br><span class="line">        &#125;);  </span><br><span class="line">    &#125;);  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">compile</span>(<span class="params">node, vm</span>)</span>&#123;  </span><br><span class="line">    <span class="keyword">if</span>(node.nodeType === <span class="number">1</span>)&#123;  </span><br><span class="line">        <span class="keyword">var</span> attr = node.attributes;  </span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">let</span> i = <span class="number">0</span>; i&lt;attr.length; i++)&#123;  </span><br><span class="line">            <span class="keyword">if</span>(attr[i].nodeName === <span class="string">'v-model'</span>)&#123;  </span><br><span class="line">                <span class="keyword">let</span> name = attr[i].nodeValue;  </span><br><span class="line">                node.addEventListener(<span class="string">'keyup'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;  </span><br><span class="line">                    vm[name] = e.target.value;  </span><br><span class="line">                &#125;);  </span><br><span class="line">                node.value = vm.data[name];  </span><br><span class="line">                node.removeAttribute(<span class="string">'v-model'</span>);  </span><br><span class="line">            &#125;  </span><br><span class="line">        &#125;  </span><br><span class="line">        <span class="keyword">if</span> (child = node.firstChild) &#123;  </span><br><span class="line">            compile(child, vm);  </span><br><span class="line">        &#125;  </span><br><span class="line">    &#125;  </span><br><span class="line">    ...  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Vue</span>(<span class="params">options</span>)</span>&#123;  </span><br><span class="line">    <span class="keyword">var</span> id = options.el;  </span><br><span class="line">    <span class="keyword">this</span>.data = options.data;  </span><br><span class="line">    observe(<span class="keyword">this</span>.data, <span class="keyword">this</span>);<span class="comment">//添加view=&gt;model的绑定  </span></span><br><span class="line">    ...  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">'app'</span>&gt;</span>  </span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">v-model</span>=<span class="string">"input"</span> <span class="attr">id</span>=<span class="string">"input"</span>&gt;</span>  </span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">"show"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span>  </span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>此时改变input的值时，span也会改变；通过console改变vm.input时，span也会改变。但当在console中输入vm.input时会出现无限循环的情况：<br><img src="data:image/png;base64,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" alt="error"><br>这是由于在getter中会反复调用自身，下面对observe进行改进，将Object.defineProperty从函数中单独取出，构成一个闭包。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">defineProperty</span>(<span class="params">vm, key, val</span>)</span>&#123;  </span><br><span class="line">    <span class="built_in">Object</span>.defineProperty(vm, key, &#123;  </span><br><span class="line">        get: <span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123;  </span><br><span class="line">            <span class="keyword">return</span> val;  </span><br><span class="line">        &#125;,  </span><br><span class="line">        set: <span class="function"><span class="keyword">function</span> (<span class="params">newValue</span>)</span>&#123;  </span><br><span class="line">            <span class="built_in">document</span>.getElementById(<span class="string">"show"</span>).innerHTML = newValue;  </span><br><span class="line">            <span class="built_in">document</span>.getElementById(<span class="string">"input"</span>).value = newValue;  </span><br><span class="line">            <span class="keyword">if</span>(newValue === val)&#123;  </span><br><span class="line">                <span class="keyword">return</span>;  </span><br><span class="line">            &#125;  </span><br><span class="line">            val = newValue;  </span><br><span class="line">        &#125;  </span><br><span class="line">    &#125;);  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">observe</span>(<span class="params">data, vm</span>)</span>&#123;  </span><br><span class="line">    <span class="built_in">Object</span>.keys(data).forEach(<span class="function"><span class="keyword">function</span>(<span class="params">key</span>)</span>&#123;  </span><br><span class="line">        defineProperty(vm, key, data[key]);  </span><br><span class="line">    &#125;);  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>修改后vm.input的值就能正确改变和返回了。但此时view的变化是通过setter手动添加的，而且只能是元素形式的节点，如果节点是模板字符串则无法动态改变。解决办法是采用订阅/发布模式进行修改，对每个节点绑定一个观察者Watcher，对每个数据绑定一个分发者Dep，数据改变时，调用分发者的通知方法，通知每个观察者进行相应的改变。<br>5、订阅/发布模式（subscribe&amp;publish）<br>采用订阅/发布模式对代码进行修改。首先定义观察者Watcher，并在编译函数compile()中对每个节点添加观察着Watcher，当接收到分发者指令时，调用update方法更新视图。接下来定义消息分发者Dep，Dep维护观察者数组，当值发生变化时，通知各观察者调用update方法。完整代码如下：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//第三部分  </span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Watcher</span>(<span class="params">vm, node, name, nodeType</span>)</span>&#123;  </span><br><span class="line">    Dep.target = <span class="keyword">this</span>;  </span><br><span class="line">    <span class="keyword">this</span>.vm = vm;  </span><br><span class="line">    <span class="keyword">this</span>.node = node;  </span><br><span class="line">    <span class="keyword">this</span>.name = name;  </span><br><span class="line">    <span class="keyword">this</span>.nodeType = nodeType;  </span><br><span class="line">    <span class="keyword">this</span>.update();  </span><br><span class="line">    Dep.target = <span class="literal">null</span>;  </span><br><span class="line">&#125;  </span><br><span class="line">Watcher.prototype = &#123;  </span><br><span class="line">    update: <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;  </span><br><span class="line">        <span class="keyword">this</span>.get();  </span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.nodeType === <span class="string">'text'</span>) &#123;  </span><br><span class="line">            <span class="keyword">this</span>.node.nodeValue = <span class="keyword">this</span>.value;  </span><br><span class="line">        &#125;  </span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.nodeType === <span class="string">'input'</span>) &#123;  </span><br><span class="line">            <span class="keyword">this</span>.node.value = <span class="keyword">this</span>.value;  </span><br><span class="line">        &#125;  </span><br><span class="line">    &#125;,  </span><br><span class="line">    get: <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;  </span><br><span class="line">        <span class="keyword">this</span>.value = <span class="keyword">this</span>.vm[<span class="keyword">this</span>.name];  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Dep</span>(<span class="params"></span>)</span>&#123;  </span><br><span class="line">    <span class="keyword">this</span>.subs = [];  </span><br><span class="line">&#125;  </span><br><span class="line">Dep.prototype = &#123;  </span><br><span class="line">    addSub: <span class="function"><span class="keyword">function</span>(<span class="params">sub</span>)</span>&#123;  </span><br><span class="line">        <span class="keyword">this</span>.subs.push(sub);  </span><br><span class="line">    &#125;,  </span><br><span class="line">    notify: <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;  </span><br><span class="line">        <span class="keyword">this</span>.subs.forEach(<span class="function"><span class="keyword">function</span>(<span class="params">sub</span>)</span>&#123;  </span><br><span class="line">            sub.update();  </span><br><span class="line">        &#125;);  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="comment">//第二部分  </span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">defineProperty</span>(<span class="params">vm, key, val</span>)</span>&#123;  </span><br><span class="line">    <span class="keyword">var</span> dep = <span class="keyword">new</span> Dep();  </span><br><span class="line">    <span class="built_in">Object</span>.defineProperty(vm, key, &#123;  </span><br><span class="line">        get: <span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123;  </span><br><span class="line">            <span class="keyword">if</span>(Dep.target)&#123;  </span><br><span class="line">                dep.addSub(Dep.target);  </span><br><span class="line">            &#125;  </span><br><span class="line">            <span class="keyword">return</span> val;  </span><br><span class="line">        &#125;,  </span><br><span class="line">        set: <span class="function"><span class="keyword">function</span> (<span class="params">newValue</span>)</span>&#123;  </span><br><span class="line">            <span class="keyword">if</span>(newValue === val)&#123;  </span><br><span class="line">                <span class="keyword">return</span>;  </span><br><span class="line">            &#125;  </span><br><span class="line">            val = newValue;  </span><br><span class="line">            dep.notify();  </span><br><span class="line">        &#125;  </span><br><span class="line">    &#125;);  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">observe</span>(<span class="params">data, vm</span>)</span>&#123;  </span><br><span class="line">    <span class="comment">//Object.keys(data)返回data的key数组  </span></span><br><span class="line">    <span class="built_in">Object</span>.keys(data).forEach(<span class="function"><span class="keyword">function</span>(<span class="params">key</span>)</span>&#123;  </span><br><span class="line">        defineProperty(vm, key, data[key]);  </span><br><span class="line">    &#125;);  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="comment">//第一部分  </span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">compile</span>(<span class="params">node, vm</span>)</span>&#123;  </span><br><span class="line">    <span class="keyword">if</span>(node.nodeType === <span class="number">1</span>)&#123;  </span><br><span class="line">        <span class="keyword">var</span> attr = node.attributes;  </span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">let</span> i = <span class="number">0</span>; i&lt;attr.length; i++)&#123;  </span><br><span class="line">            <span class="keyword">if</span>(attr[i].nodeName === <span class="string">'v-model'</span>)&#123;  </span><br><span class="line">                <span class="keyword">let</span> name = attr[i].nodeValue;  </span><br><span class="line">                node.addEventListener(<span class="string">'keyup'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;  </span><br><span class="line">                    vm[name] = e.target.value;  </span><br><span class="line">                &#125;);  </span><br><span class="line">                node.value = vm[name];  </span><br><span class="line">                node.removeAttribute(<span class="string">'v-model'</span>);  </span><br><span class="line">                <span class="keyword">new</span> Watcher(vm, node, name, <span class="string">"input"</span>);  </span><br><span class="line">            &#125;  </span><br><span class="line">        &#125;  </span><br><span class="line">        <span class="keyword">if</span> (child = node.firstChild) &#123;  </span><br><span class="line">            compile(child, vm);  </span><br><span class="line">        &#125;  </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="keyword">if</span>(node.nodeType === <span class="number">3</span>)&#123;  </span><br><span class="line">        <span class="keyword">let</span> reg = <span class="regexp">/\&#123;\&#123;(.*)\&#125;\&#125;/</span>;  </span><br><span class="line">        <span class="keyword">if</span>(reg.test(node.nodeValue))&#123;  </span><br><span class="line">            <span class="keyword">let</span> name = <span class="built_in">RegExp</span>.$<span class="number">1</span>;  </span><br><span class="line">            name = name.trim();  </span><br><span class="line">            <span class="comment">// node.nodeValue = vm.data[name];  </span></span><br><span class="line">            <span class="keyword">new</span> Watcher(vm, node, name, <span class="string">"text"</span>);  </span><br><span class="line">        &#125;  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">nodeToFragment</span>(<span class="params">node, vm</span>)</span>&#123;  </span><br><span class="line">    <span class="keyword">var</span> flag = <span class="built_in">document</span>.createDocumentFragment();  </span><br><span class="line">    <span class="keyword">var</span> child;  </span><br><span class="line">    <span class="keyword">while</span>(child = node.firstChild)&#123;  </span><br><span class="line">        compile(child, vm);  </span><br><span class="line">        flag.appendChild(child);  </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="keyword">return</span> flag;  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Vue</span>(<span class="params">options</span>)</span>&#123;  </span><br><span class="line">    <span class="keyword">var</span> id = options.el;  </span><br><span class="line">    <span class="keyword">var</span> data = options.data;  </span><br><span class="line">    observe(data, <span class="keyword">this</span>);  </span><br><span class="line">    <span class="keyword">var</span> dom = nodeToFragment(<span class="built_in">document</span>.getElementById(id), <span class="keyword">this</span>);  </span><br><span class="line">    <span class="built_in">document</span>.getElementById(id).appendChild(dom);  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="keyword">var</span> vm = <span class="keyword">new</span> Vue(&#123;  </span><br><span class="line">    el: <span class="string">'app'</span>,  </span><br><span class="line">    data: &#123;  </span><br><span class="line">        input: <span class="string">'hello'</span>  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
 
-      
-
-        
-        
-        
-
-        
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2018">2018</h1>
-          </div>
         
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/04/10/js-TwoWayDataBinding/" itemprop="url">
-              
-                <span itemprop="name">【JavaScript学习笔记】自己实现双向绑定</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-04-10T16:19:02+08:00"
-              content="2018-04-10" >
-          04-10
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/04/10/js-learn-1/" itemprop="url">
-              
-                <span itemprop="name">【JavaScript学习笔记】JavaScript踩坑（1）</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-04-10T15:51:16+08:00"
-              content="2018-04-10" >
-          04-10
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/04/10/py-exam-3/" itemprop="url">
-              
-                <span itemprop="name">【Python学习笔记】几道笔试题（3）</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-04-10T15:38:35+08:00"
-              content="2018-04-10" >
-          04-10
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/04/10/py-exam-2/" itemprop="url">
-              
-                <span itemprop="name">【Python学习笔记】几道笔试题（2）</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-04-10T14:18:06+08:00"
-              content="2018-04-10" >
-          04-10
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/04/10/js-exam-1/" itemprop="url">
-              
-                <span itemprop="name">【JavaScript学习笔记】几道笔试题（1）</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-04-10T14:18:03+08:00"
-              content="2018-04-10" >
-          04-10
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
   </div>
   
   
   
+  </article>
+
+
+    
+      
 
   
 
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/10/js-learn-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/10/js-learn-1/" itemprop="url">【JavaScript学习笔记】JavaScript踩坑（1）</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-10T15:51:16+08:00">
+                2018-04-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>使用js的过程中出现过一些意向不到的输出，在这里做个整理，已备查阅。  </p>
+<h3 id="一："><a href="#一：" class="headerlink" title="一："></a>一：</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">"0"</span>, <span class="string">"1"</span>, <span class="string">"2"</span>].map(<span class="built_in">parseInt</span>)</span><br></pre></td></tr></table></figure>
+<p>原因：输出结果为[0, NaN, NaN]。原因是map传递给parseInt的参数为3个，分别是element，index，array，指元素的值，索引，整个数组。parseInt接收2个参数，第一个为待转换字符，第二个为进制（2-36，0代表10进制）。当element为”1”时，index为1，不满足2-36之间；当element为”2”时，index为2，二进制时不能有数字大于等于2，因此仍是NaN。  </p>
+<h3 id="二："><a href="#二：" class="headerlink" title="二："></a>二：</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="literal">NaN</span> === <span class="literal">NaN</span>  </span><br><span class="line"><span class="literal">NaN</span> == <span class="literal">NaN</span></span><br></pre></td></tr></table></figure>
+<p>原因：返回值均为false，false。NaN不等于自身，要判断是否是NaN，要用isNaN()方法。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">isNaN</span>(<span class="literal">NaN</span>)</span><br></pre></td></tr></table></figure></p>
+<h3 id="三："><a href="#三：" class="headerlink" title="三："></a>三：</h3><p>在尝试自己写双向绑定时，发现通过Object.defineProperty()方法设置属性时，无法通过set外部修改属性的值，如下：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = &#123;&#125;;  </span><br><span class="line"><span class="built_in">Object</span>.defineProperty(obj, <span class="string">'txt'</span>, &#123;    </span><br><span class="line">    get: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;    </span><br><span class="line">        <span class="keyword">return</span> obj;    </span><br><span class="line">    &#125;,    </span><br><span class="line">    set: <span class="function"><span class="keyword">function</span> (<span class="params">newValue</span>) </span>&#123;  </span><br><span class="line">        <span class="built_in">document</span>.getElementById(<span class="string">'input'</span>).value = newValue;    </span><br><span class="line">        <span class="built_in">document</span>.getElementById(<span class="string">'show'</span>).innerHTML = newValue;    </span><br><span class="line">    &#125;    </span><br><span class="line">&#125;);    </span><br><span class="line"><span class="built_in">document</span>.getElementById(<span class="string">'input'</span>).addEventListener(<span class="string">'keyup'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;    </span><br><span class="line">    obj.txt = e.target.value;    </span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+<p>在console中打印obj.txt，输出为undefined，说明obj.txt = e.target.value仅将将值传进set函数，并未真正改变obj.txt的值。尝试在set中赋值，如下：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = &#123;&#125;;  </span><br><span class="line"><span class="built_in">Object</span>.defineProperty(obj, <span class="string">'txt'</span>, &#123;    </span><br><span class="line">    get: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;    </span><br><span class="line">        <span class="keyword">return</span> obj;    </span><br><span class="line">    &#125;,    </span><br><span class="line">    set: <span class="function"><span class="keyword">function</span> (<span class="params">newValue</span>) </span>&#123;  </span><br><span class="line">        obj.txt = newValue;  </span><br><span class="line">        <span class="built_in">document</span>.getElementById(<span class="string">'input'</span>).value = newValue;    </span><br><span class="line">        <span class="built_in">document</span>.getElementById(<span class="string">'show'</span>).innerHTML = newValue;    </span><br><span class="line">    &#125;    </span><br><span class="line">&#125;);    </span><br><span class="line"><span class="built_in">document</span>.getElementById(<span class="string">'input'</span>).addEventListener(<span class="string">'keyup'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;    </span><br><span class="line">    obj.txt = e.target.value;    </span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+<p>会发生死循环，因为在set中又进行了赋值，会再次调用set。<br>解决办法，构造函数，保存变量。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">defineProperty</span>(<span class="params">obj, key</span>)</span>&#123;  </span><br><span class="line">    <span class="keyword">var</span> val;  </span><br><span class="line">    <span class="built_in">Object</span>.defineProperty(obj, <span class="string">'txt'</span>, &#123;    </span><br><span class="line">        get: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;    </span><br><span class="line">            <span class="keyword">return</span> val;    </span><br><span class="line">        &#125;,    </span><br><span class="line">        set: <span class="function"><span class="keyword">function</span> (<span class="params">newValue</span>) </span>&#123;  </span><br><span class="line">            <span class="keyword">if</span>(newValue === val)&#123;  </span><br><span class="line">                <span class="keyword">return</span>;  </span><br><span class="line">            &#125;  </span><br><span class="line">            val = newValue;  </span><br><span class="line">            <span class="built_in">document</span>.getElementById(<span class="string">'input'</span>).value = newValue;    </span><br><span class="line">            <span class="built_in">document</span>.getElementById(<span class="string">'show'</span>).innerHTML = newValue;    </span><br><span class="line">        &#125;    </span><br><span class="line">    &#125;);  </span><br><span class="line">&#125;  </span><br><span class="line"><span class="keyword">var</span> obj = &#123;&#125;;  </span><br><span class="line">defineProperty(obj, <span class="string">'txt'</span>);  </span><br><span class="line"><span class="built_in">document</span>.getElementById(<span class="string">'input'</span>).addEventListener(<span class="string">'keyup'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;    </span><br><span class="line">    obj.txt = e.target.value;    </span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+<h3 id="四："><a href="#四：" class="headerlink" title="四："></a>四：</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">0.2</span><span class="number">-0.1</span> == <span class="number">0.3</span><span class="number">-0.2</span></span><br></pre></td></tr></table></figure>
+<p>结果为false，因为0.2-0.1=0.1，0.3-0.2=0.09999999。  </p>
+<h3 id="五："><a href="#五：" class="headerlink" title="五："></a>五：</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = [];  </span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i&lt;<span class="number">3</span>; i++)&#123;  </span><br><span class="line">    a[i] = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;  </span><br><span class="line">        <span class="built_in">console</span>.log(i);  </span><br><span class="line">    &#125;;  </span><br><span class="line">&#125;  </span><br><span class="line">a[<span class="number">0</span>]();</span><br></pre></td></tr></table></figure>
+<p>输出为3。a[i]绑定的i为全局变量i，当调用a[i]时，会输出全局变量i。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = [];  </span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i&lt;<span class="number">3</span>; i++)&#123;  </span><br><span class="line">    a[i] = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;  </span><br><span class="line">        <span class="built_in">console</span>.log(i);  </span><br><span class="line">    &#125;;  </span><br><span class="line">&#125;  </span><br><span class="line">a[<span class="number">0</span>]();</span><br></pre></td></tr></table></figure></p>
+<p>输出为0。a[i]绑定局部变量i，因此每次声明都会重新分配一个i给a[i]，因此当调用a[i]时，输出的是单独分配的i。  </p>
+<h3 id="六："><a href="#六：" class="headerlink" title="六："></a>六：</h3><p>参考阮一峰的ESMAScript6入门，var变量提升会导致如下输出。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> tmp = <span class="keyword">new</span> <span class="built_in">Date</span>();  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>) </span>&#123;  </span><br><span class="line">  <span class="built_in">console</span>.log(tmp);  </span><br><span class="line">  <span class="keyword">if</span> (<span class="literal">false</span>) &#123;  </span><br><span class="line">    <span class="keyword">var</span> tmp = <span class="string">'hello world'</span>;  </span><br><span class="line">  &#125;  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line">f(); <span class="comment">// undefined</span></span><br></pre></td></tr></table></figure></p>
+<p>var会“穿过”if作用域，因此相当于外层会先声明var tmp，此时tmp未赋值，因此打印undefined。  </p>
+<h3 id="七："><a href="#七：" class="headerlink" title="七："></a>七：</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span>(<span class="params">x</span>) </span>&#123;  </span><br><span class="line">    <span class="built_in">console</span>.log(x);  </span><br><span class="line">    <span class="keyword">var</span> x = <span class="number">2</span>;  </span><br><span class="line">    <span class="built_in">console</span>.log(x);  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line">test(<span class="number">1</span>);</span><br></pre></td></tr></table></figure>
+<p>输出为1，2。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> x = <span class="number">0</span>; x &lt; <span class="number">3</span>; x++) &#123;  </span><br><span class="line">    <span class="built_in">console</span>.log(x);  </span><br><span class="line">    <span class="keyword">var</span> x = <span class="number">2</span>;  </span><br><span class="line">    <span class="built_in">console</span>.log(x);  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>输出为0，2。上面两个例子说明function、for括号内的作用域是花括号{}的父作用域。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> x = <span class="number">0</span>; x &lt; <span class="number">3</span>; x++) &#123;  </span><br><span class="line">    <span class="keyword">let</span> x = <span class="number">2</span>;  </span><br><span class="line">    <span class="built_in">console</span>.log(x);  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>输出为3个2。此时内部使用let重新声明x，但不会改变圆括号内父作用域的同名变量。  </p>
+<h3 id="八："><a href="#八：" class="headerlink" title="八："></a>八：</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> test1 = [<span class="number">1</span>, <span class="number">2</span>],  </span><br><span class="line">    test2 = <span class="number">3</span>;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">func1</span>(<span class="params">test</span>) </span>&#123;  </span><br><span class="line">    test[<span class="number">0</span>] += <span class="number">1</span>;  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">func2</span>(<span class="params">test</span>) </span>&#123;  </span><br><span class="line">    test += <span class="number">1</span>;  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line">func1(test1);  </span><br><span class="line">func2(test2);  </span><br><span class="line"><span class="built_in">console</span>.log(test1);<span class="comment">//[ 2, 2 ]  </span></span><br><span class="line"><span class="built_in">console</span>.log(test2);<span class="comment">//3</span></span><br></pre></td></tr></table></figure>
+<p>函数参数传递是按值传参，但当传入的是对象时，传入的是指向对象的指针。因此在函数内修改对象会改变对象本身。  </p>
+<h3 id="九："><a href="#九：" class="headerlink" title="九："></a>九：</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span> (<span class="params">x, x, x</span>) </span>&#123;  </span><br><span class="line">    <span class="built_in">console</span>.log(x);  </span><br><span class="line">&#125;  </span><br><span class="line">test(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>);<span class="comment">//3</span></span><br></pre></td></tr></table></figure>
+<p>非严格模式下，函数可以有同名参数，后面的会覆盖前面的。  </p>
+<h3 id="十："><a href="#十：" class="headerlink" title="十："></a>十：</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = &#123;<span class="attr">n</span>:<span class="number">1</span>&#125;;    </span><br><span class="line"><span class="keyword">var</span> b = a;    </span><br><span class="line">a.x = a = &#123;<span class="attr">n</span>:<span class="number">2</span>&#125;;    </span><br><span class="line"><span class="built_in">console</span>.log(a.x);    </span><br><span class="line"><span class="built_in">console</span>.log(b.x);</span><br></pre></td></tr></table></figure>
+<p>结果为undefined，{n:2}。由此可知多个等号的赋值顺序：先获取最左侧的地址，再由右向左依次赋值。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span> (<span class="params"></span>) </span>&#123;  </span><br><span class="line">    <span class="keyword">let</span> a = b = <span class="number">1</span>;  </span><br><span class="line">&#125;  </span><br><span class="line">test();  </span><br><span class="line"><span class="built_in">console</span>.log(b);<span class="comment">//1</span></span><br></pre></td></tr></table></figure></p>
+<p>如果多个等号赋值的中间某一变量之前未声明，则在非严格模式下提升为全局变量，严格模式下报错。  </p>
+<h3 id="十一："><a href="#十一：" class="headerlink" title="十一："></a>十一：</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(<span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params">f</span>)</span>&#123;  </span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">typeof</span> f();<span class="comment">//"number"  </span></span><br><span class="line">&#125;)(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; <span class="keyword">return</span> <span class="number">1</span>; &#125;);</span><br></pre></td></tr></table></figure>
+<p>传入的参数是一个函数，函数执行后返回1，因此typeof 1是number。虽然函数名和参数名同名，但互不影响。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span> (<span class="params">test</span>) </span>&#123;  </span><br><span class="line">    <span class="built_in">console</span>.log(<span class="keyword">typeof</span> test);  </span><br><span class="line">&#125;  </span><br><span class="line">test(<span class="number">1</span>);<span class="comment">//number</span></span><br></pre></td></tr></table></figure></p>
+<p>上面的例子说明函数参数中有与函数名同名的变量时，会覆盖函数名，说明参数域是一个独立的子作用域。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> test = <span class="function"><span class="keyword">function</span> <span class="title">test2</span>(<span class="params"></span>) </span>&#123;  </span><br><span class="line">    <span class="built_in">console</span>.log(<span class="keyword">typeof</span> test2);  </span><br><span class="line">&#125;;  </span><br><span class="line">test();<span class="comment">//function  </span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> test);<span class="comment">//function  </span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> test2);<span class="comment">//undefined</span></span><br></pre></td></tr></table></figure></p>
+<p>函数可以通过三种方式声明：1、函数声明；2、函数表达式；3、new Function(“x”,”return x;”)构造函数。当函数以函数表达式的方式声明时，等号后可以是匿名函数，也可以带函数名，但函数名只能在函数体内引用。  </p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/10/py-exam-3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/10/py-exam-3/" itemprop="url">【Python学习笔记】几道笔试题（3）</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-10T15:38:35+08:00">
+                2018-04-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>继续记录最近做的一些笔试题。  </p>
+<h3 id="第一题"><a href="#第一题" class="headerlink" title="第一题"></a>第一题</h3><p>下列选项中，不可能是快速排序第二趟排序结果的是：<br>A、2，3，5，4，6，7，9<br>B、2，7，5，6，4，3，9<br>C、3，2，5，4，7，6，9<br>D、4，2，3，5，7，6，9<br>尝试：快排的思想是找到一个值（一般选择数组第一个元素），将比这个值小的所有元素放到该值左边，比这个值大的元素放到该值右边，然后分别对左右使用快排并合并，直到切分后的数组长度为1为止。因此我判断数组内排序的大致顺序是：最小，较小，较大，最大。B中7、3位置与这种顺序不符。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">fast_sort</span><span class="params">(arr)</span>:</span>  </span><br><span class="line">    <span class="keyword">if</span> len(arr) &lt;= <span class="number">1</span>:  </span><br><span class="line">        <span class="keyword">return</span> arr  </span><br><span class="line">    <span class="keyword">else</span>:  </span><br><span class="line">        middle_value = arr[<span class="number">0</span>]  </span><br><span class="line">        left = []  </span><br><span class="line">        middle = [middle_value]  </span><br><span class="line">        right = []  </span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> arr[<span class="number">1</span>:]:  </span><br><span class="line">            <span class="keyword">if</span> i&lt;middle_value:  </span><br><span class="line">                left.append(i)  </span><br><span class="line">            <span class="keyword">elif</span> i&gt;middle_value:  </span><br><span class="line">                right.append(i)  </span><br><span class="line">            <span class="keyword">else</span>:  </span><br><span class="line">                middle.append(i)  </span><br><span class="line">        left = fast_sort(left)  </span><br><span class="line">        right = fast_sort(right)  </span><br><span class="line">        <span class="keyword">return</span> left+middle+right</span><br></pre></td></tr></table></figure></p>
+<p>修改：当快排中间值正好是待排数组中最小值（或最大值）时，快排退化为冒泡排序，因此经过这一轮排序，仅被选中的值会被排序正确。这种情况就会造成元素分布不会呈低-中-高这样的顺序，而是正确-乱序（或乱序-正确）。<a href="https://blog.csdn.net/u011240016/article/details/53149645" target="_blank" rel="noopener">快排第n趟排序结果校验</a>中给出的解法是：每趟排序就会至少有一个元素排在了最终的位置上，因此只需要比较排序后与正确结果的相同位数。<br>分析：快排利用中间值，将比中间值小（大）的元素排在左（右）边，因此经过这次排序后，中间值的位置一定正确。B的情况是被选为中间值是最小值和最大值，即只有首尾两个元素排序正确。  </p>
+<h3 id="第二题"><a href="#第二题" class="headerlink" title="第二题"></a>第二题</h3><p>输入包括多组测试数据。每组输入第一行是两个正整数N和M（0 &lt; N &lt;= 30000,0 &lt; M &lt; 5000），分别代表学生的数目和操作的数目。学生ID编号从1编到N。第二行包含N个整数，代表这N个学生的初始成绩，其中第i个数代表ID为i的学生的成绩。接下来又M行，每一行有一个字符C（只取‘Q’或‘U’），和两个正整数A,B,当C为’Q’的时候, 表示这是一条询问操作，他询问ID从A到B（包括A,B）的学生当中，成绩最高的是多少。当C为‘U’的时候，表示这是一条更新操作，要求把ID为A的学生的成绩更改为B。<br>对于每一次询问操作，在一行里面输出最高成绩。<br>样例输入：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">5</span> <span class="number">7</span>  </span><br><span class="line"><span class="number">1</span> <span class="number">2</span> <span class="number">3</span> <span class="number">4</span> <span class="number">5</span>  </span><br><span class="line">Q <span class="number">1</span> <span class="number">5</span>  </span><br><span class="line">U <span class="number">3</span> <span class="number">6</span>  </span><br><span class="line">Q <span class="number">3</span> <span class="number">4</span>  </span><br><span class="line">Q <span class="number">4</span> <span class="number">5</span>  </span><br><span class="line">U <span class="number">4</span> <span class="number">5</span>  </span><br><span class="line">U <span class="number">2</span> <span class="number">9</span>  </span><br><span class="line">Q <span class="number">1</span> <span class="number">5</span></span><br></pre></td></tr></table></figure></p>
+<p>样例输出：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">5</span>  </span><br><span class="line"><span class="number">6</span>  </span><br><span class="line"><span class="number">5</span>  </span><br><span class="line"><span class="number">9</span></span><br></pre></td></tr></table></figure></p>
+<p>尝试：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys  </span><br><span class="line"><span class="keyword">while</span> <span class="keyword">True</span>:  </span><br><span class="line">    n, m = list(map(int, sys.stdin.readline().strip().split()))  </span><br><span class="line">    init = list(map(int, sys.stdin.readline().strip().split()))  </span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(m):  </span><br><span class="line">        line = sys.stdin.readline().strip().split()  </span><br><span class="line">        <span class="keyword">if</span> line[<span class="number">0</span>] == <span class="string">'Q'</span>:  </span><br><span class="line">            a, b = list(map(int, line[<span class="number">1</span>:]))  </span><br><span class="line">            print(max(init[a<span class="number">-1</span>:b]))  </span><br><span class="line">        <span class="keyword">elif</span> line[<span class="number">0</span>] == <span class="string">'U'</span>:  </span><br><span class="line">            a, b = list(map(int, line[<span class="number">1</span>:]))  </span><br><span class="line">            init[a<span class="number">-1</span>] = b</span><br></pre></td></tr></table></figure></p>
+<p>报错，第三行没有足够变量解构赋值。应该是测试样例用完未退出，在外层加上try-except。之后测试用例中有一项“Q 9 5”没有跑通，加if判断ab大小。<br>修改：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys  </span><br><span class="line"><span class="keyword">try</span>:  </span><br><span class="line">    <span class="keyword">while</span> <span class="keyword">True</span>:  </span><br><span class="line">        n, m = list(map(int, sys.stdin.readline().strip().split()))  </span><br><span class="line">        init = list(map(int, sys.stdin.readline().strip().split()))  </span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(m):  </span><br><span class="line">            line = sys.stdin.readline().strip().split()  </span><br><span class="line">            <span class="keyword">if</span> line[<span class="number">0</span>] == <span class="string">'Q'</span>:  </span><br><span class="line">                a, b = list(map(int, line[<span class="number">1</span>:]))  </span><br><span class="line">                <span class="keyword">if</span> a&gt;b:  </span><br><span class="line">                    a, b = b, a  </span><br><span class="line">                print(max(init[a<span class="number">-1</span>:b]))  </span><br><span class="line">            <span class="keyword">elif</span> line[<span class="number">0</span>] == <span class="string">'U'</span>:  </span><br><span class="line">                a, b = list(map(int, line[<span class="number">1</span>:]))  </span><br><span class="line">                init[a<span class="number">-1</span>] = b  </span><br><span class="line"><span class="keyword">except</span>:  </span><br><span class="line">    <span class="keyword">pass</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="第三题"><a href="#第三题" class="headerlink" title="第三题"></a>第三题</h3><p>开发一个简单错误记录功能小模块，能够记录出错的代码所在的文件名称和行号。<br>1.记录最多8条错误记录，对相同的错误记录(即文件名称和行号完全匹配)只记录一条，错误计数增加；(文件所在的目录不同，文件名和行号相同也要合并)<br>2.超过16个字符的文件名称，只记录文件的最后有效16个字符；(如果文件名不同，而只是文件名的后16个字符和行号相同，也不要合并)<br>3.输入的文件可能带路径，记录文件名称不能带路径。<br>输入：<br>一行或多行字符串。每行包括带路径文件名称，行号，以空格隔开。<br>文件路径为windows格式如：E:\V1R2\product\fpgadrive.c 1325<br>输出：<br>将所有的记录统计并将结果输出，格式：文件名代码行数数目，一个空格隔开，如: fpgadrive.c 1325 1<br>结果根据数目从多到少排序，数目相同的情况下，按照输入第一次出现顺序排序。<br>如果超过8条记录，则只输出前8条记录。如果文件名的长度超过16个字符，则只输出后16个字符<br>尝试：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys  </span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:  </span><br><span class="line">    dic = &#123;&#125;  </span><br><span class="line">    <span class="keyword">try</span>:  </span><br><span class="line">        <span class="keyword">while</span> <span class="keyword">True</span>:  </span><br><span class="line">            line = sys.stdin.readline().strip().split()  </span><br><span class="line">            <span class="keyword">if</span> len(line) == <span class="number">0</span>:  </span><br><span class="line">                <span class="keyword">break</span>  </span><br><span class="line">            pos = line[<span class="number">0</span>].rfind(<span class="string">'\\'</span>)  </span><br><span class="line">            line = line[<span class="number">0</span>][pos+<span class="number">1</span>:]+<span class="string">' '</span>+line[<span class="number">1</span>]  </span><br><span class="line">            <span class="keyword">if</span> line <span class="keyword">in</span> dic:  </span><br><span class="line">                dic[line] = dic[line]+<span class="number">1</span>  </span><br><span class="line">            <span class="keyword">else</span>:  </span><br><span class="line">                dic[line] = <span class="number">1</span>  </span><br><span class="line">        res_value = [<span class="number">0</span> <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">8</span>)]  </span><br><span class="line">        res_key = [<span class="number">0</span> <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">8</span>)]  </span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> dic:  </span><br><span class="line">            <span class="keyword">if</span> dic[i]&lt;=res_value[<span class="number">-1</span>]:  </span><br><span class="line">                <span class="keyword">continue</span>  </span><br><span class="line">            <span class="keyword">for</span> j <span class="keyword">in</span> range(<span class="number">8</span>):  </span><br><span class="line">                <span class="keyword">if</span> dic[i]&gt;res_value[j]:  </span><br><span class="line">                    res_value.insert(j, dic[i])  </span><br><span class="line">                    res = i.split()[<span class="number">0</span>][<span class="number">-16</span>:]+<span class="string">' '</span>+i.split()[<span class="number">1</span>]+<span class="string">' '</span>+str(dic[i])  </span><br><span class="line">                    res_key.insert(j, res)  </span><br><span class="line">                    <span class="keyword">break</span>  </span><br><span class="line">        resPrint = <span class="string">' '</span>  </span><br><span class="line">        resPrint = resPrint.join(res_key[:<span class="number">8</span>])  </span><br><span class="line">        print(resPrint)  </span><br><span class="line">    <span class="keyword">except</span>:  </span><br><span class="line">        <span class="keyword">pass</span></span><br></pre></td></tr></table></figure></p>
+<p>思路：读取完整文件名称（输出时再截取16位）和行号，作为key，值为出现次数，存入字典中。读取完毕后，遍历字典，res_value中存放前8位最大值。当字典中的值大于列表中j位置的值时，将字典的value插入res_value中，key插入res_key中。当有相同大小的value时，从前向后遍历且判断是否大于可将后放入的key存在后面，满足题意。提交，未能AC。<br>问题分析：<br>1、python中字典类型是无序的，不会记录放入顺序。当遍历字典时，不会以添加的先后顺序遍历，而是以key字典序遍历，因此需改用列表记录顺序。<br>2、当输入文件数较小时，res_key中还存在初始填充的0值，因此需要判断前8位中是否还有0元素。<br>3、输出格式不符合规范。经过测试，本题需要每个错误项作为一行，而不是拼接为一个字符串。<br>修改：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys  </span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:  </span><br><span class="line">    dic = []  </span><br><span class="line">    dic_value = []  </span><br><span class="line">    <span class="keyword">while</span> <span class="keyword">True</span>:  </span><br><span class="line">            line = sys.stdin.readline().strip().split()  </span><br><span class="line">            <span class="keyword">if</span> len(line) == <span class="number">0</span>:  </span><br><span class="line">                <span class="keyword">break</span>  </span><br><span class="line">            pos = line[<span class="number">0</span>].rfind(<span class="string">'\\'</span>)  </span><br><span class="line">            line = line[<span class="number">0</span>][pos+<span class="number">1</span>:]+<span class="string">' '</span>+line[<span class="number">1</span>]  </span><br><span class="line">            <span class="keyword">if</span> line <span class="keyword">in</span> dic:  </span><br><span class="line">                dic_value[dic.index(line)] = dic_value[dic.index(line)]+<span class="number">1</span>  </span><br><span class="line">            <span class="keyword">else</span>:  </span><br><span class="line">                dic.append(line)  </span><br><span class="line">                dic_value.append(<span class="number">1</span>)  </span><br><span class="line">    res_value = [<span class="number">0</span> <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">8</span>)]  </span><br><span class="line">    res_key = [<span class="number">0</span> <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">8</span>)]  </span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(dic)):  </span><br><span class="line">        <span class="keyword">if</span> dic_value[i]&lt;=res_value[<span class="number">-1</span>]:  </span><br><span class="line">            <span class="keyword">continue</span>  </span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> range(<span class="number">8</span>):  </span><br><span class="line">            <span class="keyword">if</span> dic_value[i]&gt;res_value[j]:  </span><br><span class="line">                res_value.insert(j, dic_value[i])  </span><br><span class="line">                res = dic[i].split()[<span class="number">0</span>][<span class="number">-16</span>:]+<span class="string">' '</span>+dic[i].split()[<span class="number">1</span>]+<span class="string">' '</span>+str(dic_value[i])  </span><br><span class="line">                res_key.insert(j, res)  </span><br><span class="line">                <span class="keyword">break</span>  </span><br><span class="line">    <span class="keyword">if</span> res_key.index(<span class="number">0</span>)&lt;<span class="number">8</span>:  </span><br><span class="line">        res_key_index = res_key.index(<span class="number">0</span>)  </span><br><span class="line">    <span class="keyword">else</span>:  </span><br><span class="line">        res_key_index = <span class="number">8</span>  </span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(res_key_index):  </span><br><span class="line">        print(res_key[i])</span><br></pre></td></tr></table></figure></p>
+<h3 id="第四题"><a href="#第四题" class="headerlink" title="第四题"></a>第四题</h3><p>现在有两堆石子,小今与小条玩游戏,2个人都足够聪明,两个人规定:每次每人只能从其中一堆中取走1个或2个或3个石子,最后将石子全部取完的人胜利.现在两堆石子的个数为8和9,请问如何安排才能让小今必胜?<br>思路：回溯法。为使小今赢得比赛，最后一种情况是小今取完还剩4块石头，小条无论怎么取下一步小今都会赢。因此需将石头控制在4的倍数，即小今第一步走取9块石头中的一个，之后只要控制石头数是4的倍数即可。  </p>
+<h3 id="第五题"><a href="#第五题" class="headerlink" title="第五题"></a>第五题</h3><p>所有新闻真实率到达了98%,工作人员在检验一个真实的新闻把它检验为一个虚假的新闻的概率为2%,而一个虚假的新闻被检验为真实的新闻的概率为5%.那么,一个被检验为真实的新闻确实是真实的新闻的概率是多大?<br>思路：被检验为真实的新闻包括两部分：真实新闻被检验为真实，虚假新闻被检验为真实。其中第一部分占比0.98<em>0.98约为0.96，第二部分占比0.02</em>0.95约为0.001，即被检测为真实的确实为真实新闻的概率为0.96/0.961约为0.99896。  </p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/10/py-exam-2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/10/py-exam-2/" itemprop="url">【Python学习笔记】几道笔试题（2）</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-10T14:18:06+08:00">
+                2018-04-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>最近要申暑期实习，在牛客、赛码上做了一些真题，在这里将其中一部分错题做个整理。  </p>
+<h3 id="第一题"><a href="#第一题" class="headerlink" title="第一题"></a>第一题</h3><p>小东和其他小朋友正在玩一个关于选举的游戏。选举是通过投票的方式进行的，得票最多的人将获胜。<br>小东是编号为1的候选者，此外还有其他的候选者参加选举。根据初步的调查情况，所有准备投票的小朋友都有一定的投票倾向性，小东如果要获得胜利，必须争取部分准备为其他候选人投票的小朋友。由于小东的资源较为有限，她希望用最小的代价赢得胜利，请你帮忙计算她最少需要争取的选票数。<br>输入：<br>输入有若干组，每组包含两行，第一行为一个正整数n（2&lt;=n&lt;=100），表示候选者的数量，第二行为每个候选人预期得到的选票数，以空格分开，每人的预期得票数在1到1000之间（包含1和1000）。<br>经过小东的争取后，可能出现候选人得票数为0或超过1000的情况。<br>输出：<br>对每组测试数据，单独输出一行，内容为小东最少需要争取的选票数。<br>样例输入：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">5</span>  </span><br><span class="line"><span class="number">5</span> <span class="number">1</span> <span class="number">11</span> <span class="number">2</span> <span class="number">8</span>  </span><br><span class="line"><span class="number">4</span>  </span><br><span class="line"><span class="number">1</span> <span class="number">8</span> <span class="number">8</span> <span class="number">8</span>  </span><br><span class="line"><span class="number">2</span>  </span><br><span class="line"><span class="number">7</span> <span class="number">6</span></span><br></pre></td></tr></table></figure></p>
+<p>样例输出：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">4</span>  </span><br><span class="line"><span class="number">6</span>  </span><br><span class="line"><span class="number">0</span></span><br></pre></td></tr></table></figure></p>
+<p>尝试：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> <span class="keyword">True</span>:  </span><br><span class="line">    n = int(raw_input())  </span><br><span class="line">    s = map(int, raw_input().split())  </span><br><span class="line">    s0 = s[<span class="number">0</span>]  </span><br><span class="line">    s1 = s[<span class="number">0</span>]  </span><br><span class="line">    s[<span class="number">0</span>] = <span class="number">0</span>  </span><br><span class="line">    <span class="keyword">while</span> max(s)&gt;=s1:  </span><br><span class="line">        maxIndex = s.index(max(s))  </span><br><span class="line">        add = (max(s) - s1)//<span class="number">2</span> + <span class="number">1</span>  </span><br><span class="line">        s1 += add  </span><br><span class="line">        s[maxIndex] -= add  </span><br><span class="line">    print(str(s1-s0))</span><br></pre></td></tr></table></figure></p>
+<p>思路：将小东初始选票存为s0，当前选票存为s1，并把s[0]置为0防止max函数取到。接下来判断s中是否有超过s1的值，如果有则将该值减少与s1的差的一半加一，s1增加与最大值的差的一半加一。<br>算法未能跑通所有测试用例。<br>分析：当s中最大值与s1的差是奇数时，如7，差地板除2再加1等于4，s1超过当前最大值；当s中最大值与s1的差是偶数时，如8，差地板除2再加1等于5，s1超过当前最大值。但考虑到最大值是动态变化的，一次调整得过大会造成最大值减小过快，远远低于第二大的值，因此应每次仅加减1，即可保证不出错。<br>修改：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> <span class="keyword">True</span>:  </span><br><span class="line">    n = int(raw_input())  </span><br><span class="line">    s = map(int, raw_input().split())  </span><br><span class="line">    s0 = s[<span class="number">0</span>]  </span><br><span class="line">    s1 = s[<span class="number">0</span>]  </span><br><span class="line">    s[<span class="number">0</span>] = <span class="number">0</span>  </span><br><span class="line">    <span class="keyword">while</span> max(s)&gt;=s1:  </span><br><span class="line">        maxIndex = s.index(max(s))  </span><br><span class="line">        s1 += <span class="number">1</span>  </span><br><span class="line">        s[maxIndex] -= <span class="number">1</span>  </span><br><span class="line">    print(str(s1-s0))</span><br></pre></td></tr></table></figure></p>
+<h3 id="第二题"><a href="#第二题" class="headerlink" title="第二题"></a>第二题</h3><p>有5个人ABCDE排队，排好后他们决定重新排队，每个人都不在原来的位置上，那么总共有多少种排法？<br>解：n个人每个人都不站在原来的位置的方法数有f(n)=n!(1/2!-1/3!+1/4!+..+(-1)^n*1/n!)，代入n=5，解为44.  </p>
+<h3 id="第三题"><a href="#第三题" class="headerlink" title="第三题"></a>第三题</h3><p>小明买了一些彩色的气球用绳子串在一条线上，想要装饰房间，每个气球都染上了一种颜色，每个气球的形状都是各不相同的。我们用1到9一共9个数字表示不同的颜色，如12345则表示一串5个颜色各不相同的气球串。但小明希望得到不出现重复颜色的气球串，那么现在小明需要将这个气球串剪成多个较短的气球串，小明一共有多少种剪法？如原气球串12345的一种是剪法是剪成12和345两个气球串。<br>注意每种剪法需满足最后的子串中气球颜色各不相同（如果满足该条件，允许不剪，即保留原串）。两种剪法不同当且仅当存在一个位置，在一种剪法里剪开了，而在另一种中没剪开。详见样例分析。<br>输入：<br>第一行输入一个正整数n（1≤n≤100000），表示气球的数量。<br>第二行输入n个整数a1，a2，a3…an，ai表示该气球串上第i个气球的颜色。对于任意i，有1≤ai≤9。<br>输出：<br>输出一行，第一行输出一个整数，表示满足要求的剪法，输出最终结果除以1000000007后的余数。<br>尝试：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">cal</span><span class="params">(n)</span>:</span>  </span><br><span class="line">    res = <span class="number">1</span>  </span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, n):  </span><br><span class="line">        resTemp = <span class="number">1</span>  </span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> range(i):  </span><br><span class="line">            resTemp = resTemp*(n-j<span class="number">-1</span>)/(j+<span class="number">1</span>)  </span><br><span class="line">        res = res+int(resTemp)  </span><br><span class="line">    <span class="keyword">return</span> res  </span><br><span class="line">  </span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:  </span><br><span class="line">    n = int(raw_input())  </span><br><span class="line">    nArr = list(map(int, raw_input().split()))  </span><br><span class="line">    res = <span class="number">1</span>  </span><br><span class="line">    resTemp = []  </span><br><span class="line">    lastEle = nArr[<span class="number">0</span>]  </span><br><span class="line">    lastLen = <span class="number">1</span>  </span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> nArr[<span class="number">1</span>:]:  </span><br><span class="line">        <span class="keyword">if</span> i != lastEle:  </span><br><span class="line">            lastEle = i  </span><br><span class="line">            lastLen = lastLen+<span class="number">1</span>  </span><br><span class="line">        <span class="keyword">else</span>:  </span><br><span class="line">            res = res*cal(lastLen)  </span><br><span class="line">            lastLen = <span class="number">1</span>  </span><br><span class="line">    res = res*cal(lastLen)  </span><br><span class="line">    print(str(res))</span><br></pre></td></tr></table></figure></p>
+<p>思路：因为相同元素不能存在于同一子串中，因此所有相邻的相同元素间都需要切开。切开后计算前一子串可分割的更小子串数，所有结果相乘，即为总的可能分割数。具体方法是遍历气球串数组，如果两相同元素相邻，就在此处切开，计算前一部分可分割的子串数（cal函数）并与已有结果相乘，继续遍历，直到尾部。遍历完成后计算尾部子串可继续分割子串数并与已有结果相乘。<br>结果未能跑通所有测试用例。<br>分析：对于12332这种类型的情况，该方法能得出正确结果；如果用例变为32332，该方法只会在33中间切一刀，之后分别计算两子串可分割数并相乘。而实际上前一子串已有3这个元素，不能将3再放入其中。<br>修改：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:  </span><br><span class="line">    n = int(raw_input())  </span><br><span class="line">    nArr = list(map(int, raw_input().split()))  </span><br><span class="line">    dp = [<span class="number">1</span>]  </span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, n+<span class="number">1</span>):  </span><br><span class="line">        col = [<span class="number">0</span> <span class="keyword">for</span> j <span class="keyword">in</span> range(<span class="number">10</span>)]  </span><br><span class="line">        d = <span class="number">0</span>  </span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> range(<span class="number">1</span>, i+<span class="number">1</span>):  </span><br><span class="line">            col[nArr[i-j]] = col[nArr[i-j]]+<span class="number">1</span>  </span><br><span class="line">            <span class="keyword">if</span> col[nArr[i-j]]&gt;<span class="number">1</span>:  </span><br><span class="line">                <span class="keyword">break</span>  </span><br><span class="line">            d = d+dp[i-j]  </span><br><span class="line">        dp.append(d)  </span><br><span class="line">    print(dp[<span class="number">-1</span>]%<span class="number">1000000007</span>)</span><br></pre></td></tr></table></figure></p>
+<p>思路：构造数组dp，dp[i]表示遍历到位置i时满足条件的划分数。计算i+1时向前遍历dp，直到遍历到某一位置k使得包含k后不满足条件，此时dp[i+1]的值为数组dp[k]到dp[i]的连加。外层循环遍历n，最坏情况下内层循环由1至n，根据欧拉公式，时间复杂度为o(nlogn)。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/10/js-exam-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/10/js-exam-1/" itemprop="url">【JavaScript学习笔记】几道笔试题（1）</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-10T14:18:03+08:00">
+                2018-04-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>前几天所里招聘React前端，由我来负责笔试。为防止有人背题，笔试后要询问应聘者答题思路，因此我提前做了这套笔试题。下面是节选的部分原题。  </p>
+<h3 id="第一题"><a href="#第一题" class="headerlink" title="第一题"></a>第一题</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;   </span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">typeof</span> <span class="built_in">arguments</span>;   </span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure>
+<p>思路：关键字arguments返回函数传入的参数，是object。因此return的是object。  </p>
+<h3 id="第二题"><a href="#第二题" class="headerlink" title="第二题"></a>第二题</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params">x</span>)</span>&#123;   </span><br><span class="line">    <span class="keyword">delete</span> x;   </span><br><span class="line">    <span class="keyword">return</span> x;   </span><br><span class="line">&#125;)(<span class="number">1</span>);</span><br></pre></td></tr></table></figure>
+<p>思路：结果为1，delete无法删除元素。delete用于删除对象中的某些属性，如delete person.name将name属性从对象person中去除。此外，Map、Set中也使用delete删除元素，不同的是Map中传入key，Set中传入自身。  </p>
+<h3 id="第三题"><a href="#第三题" class="headerlink" title="第三题"></a>第三题</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> y = <span class="number">1</span>, x = y = <span class="keyword">typeof</span> x;   </span><br><span class="line"><span class="built_in">console</span>.log(x);</span><br></pre></td></tr></table></figure>
+<p>思路：参考<a href="https://www.cnblogs.com/xxcanghai/p/4998076.html" target="_blank" rel="noopener">千万不要在JS中使用连等赋值操作</a>，A=B=C等同B=C，A=B。先看y = typeof x，x此时未赋值，因此是undefined，此时y被赋值为undefined。之后x = y，x被赋值为undefined。<br>补充：赛码网上去年360笔试题中有一题与本题很像。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a,b;  </span><br><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;  </span><br><span class="line">    <span class="built_in">console</span>.log(a);  </span><br><span class="line">    <span class="built_in">console</span>.log(b);  </span><br><span class="line">    <span class="keyword">var</span> a=b=<span class="number">3</span>;  </span><br><span class="line">    <span class="built_in">console</span>.log(a);  </span><br><span class="line">    <span class="built_in">console</span>.log(b);  </span><br><span class="line">&#125;)();  </span><br><span class="line"><span class="built_in">console</span>.log(a);  </span><br><span class="line"><span class="built_in">console</span>.log(b);</span><br></pre></td></tr></table></figure></p>
+<p>思路：立即执行函数中var a=b=3可分解为b=3，var a=b。由于b前没有var重新声明，因此是全局变量b被赋值3，之后函数内局部变量a被赋值3。第一对console.log输出的a是局部变量a，b是全局变量b，两者都未定义。第三对console.log输出的是全局变量a，b。因此结果为：undefined，undefined，3，3，undefined，3。  </p>
+<h3 id="第四题"><a href="#第四题" class="headerlink" title="第四题"></a>第四题</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> foo = &#123;  </span><br><span class="line">    bar: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; <span class="keyword">return</span> <span class="keyword">this</span>.baz; &#125;,  </span><br><span class="line">    baz: <span class="number">1</span>  </span><br><span class="line">&#125;;  </span><br><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;  </span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">typeof</span> <span class="built_in">arguments</span>[<span class="number">0</span>]();  </span><br><span class="line">&#125;)(foo.bar);</span><br></pre></td></tr></table></figure>
+<p>思路：foo.bar是function，因此将foo.bar传入并执行h后相当于return typeof this.baz。由于当前object没有baz这个属性，因此返回undefined。  </p>
+<h3 id="第五题"><a href="#第五题" class="headerlink" title="第五题"></a>第五题</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> m= <span class="number">1</span>, j = k = <span class="number">0</span>;   </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">add</span>(<span class="params">n</span>) </span>&#123;   </span><br><span class="line">    <span class="keyword">return</span> n = n+<span class="number">1</span>;   </span><br><span class="line">　  &#125;   </span><br><span class="line">y = add(m);   </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">add</span>(<span class="params">n</span>) </span>&#123;   </span><br><span class="line">    <span class="keyword">return</span> n = n + <span class="number">3</span>;   </span><br><span class="line">&#125;   </span><br><span class="line">z = add(m);</span><br></pre></td></tr></table></figure>
+<p>y和z的最终结果为4，4。js解释器会在所有代码执行前先查找所有函数，因此可以在函数声明前调用函数。并且后面定义的函数将覆盖前面同名的函数（即使调用参数不同）。实验如下。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">dosth();  </span><br><span class="line">  </span><br><span class="line">dosth(<span class="number">2</span>);  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">dosth</span>(<span class="params">num</span>)</span>&#123;  </span><br><span class="line">    <span class="built_in">console</span>.log(num);  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">dosth</span>(<span class="params"></span>)</span>&#123;  </span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'1'</span>);  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>打印1，1，说明后面的dosth覆盖了前面的dosth。另外，python在调用函数前必须先声明函数，而且函数会根据位置发生重载。  </p>
+<h3 id="第六题"><a href="#第六题" class="headerlink" title="第六题"></a>第六题</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = &#123;<span class="attr">n</span>:<span class="number">1</span>&#125;;  </span><br><span class="line"><span class="keyword">var</span> b = a;  </span><br><span class="line">a.x = a = &#123;<span class="attr">n</span>:<span class="number">2</span>&#125;;  </span><br><span class="line"><span class="built_in">console</span>.log(a.x);  </span><br><span class="line"><span class="built_in">console</span>.log(b.x);</span><br></pre></td></tr></table></figure>
+<p>思路：结果为undefined，{n:2}。js赋值操作先获得左侧地址，再计算右侧结果赋值到左边。首先a，b都指向对象{n:1}，第三行先取得{n:1}对象，取得{n:1}.x地址，之后计算右边，将a赋值为对象{n:2}。之后打印a.x的a是{n:2}，没有a.x；打印b.x的对象是{n:1,x:{n:2}}。经过测试，python中使用字典也是同样的结果，说明python也是先去左边地址，再计算右边结果。  </p>
+<h3 id="第七题"><a href="#第七题" class="headerlink" title="第七题"></a>第七题</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> xx = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;  </span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"done"</span>);  </span><br><span class="line">&#125;();  </span><br><span class="line"><span class="built_in">console</span>.log(xx);<span class="comment">//undefined</span></span><br></pre></td></tr></table></figure>
+<p>思路：将xx赋值为一个立即执行函数，无返回值，因此是undefined。  </p>
+<h3 id="编程题一"><a href="#编程题一" class="headerlink" title="编程题一"></a>编程题一</h3><p>只用一重循环去掉一组整型数组中重复的值。比如输入: [1,13,24,11,11,14,1,2]，输出: [1,13,24,11,14,2]，需要去掉重复的11和1这两个元素。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">unique</span>(<span class="params">arr</span>)</span>&#123;  </span><br><span class="line">    <span class="keyword">let</span> hash=&#123;&#125;;  </span><br><span class="line">    <span class="keyword">let</span> data=[];  </span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> i=<span class="number">0</span>;i&lt;arr.length;i++)&#123;  </span><br><span class="line">        <span class="keyword">if</span> (!hash[arr[i]])  &#123;  </span><br><span class="line">            hash[arr[i]]=<span class="literal">true</span>;  </span><br><span class="line">            data.push(arr[i]);  </span><br><span class="line">       &#125;        </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="keyword">return</span> data  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>思路：最简单的方法是建一个表，记录每一个元素是否出现，返回未重复出现的元素。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">unique</span>(<span class="params">arr</span>)</span>&#123;  </span><br><span class="line">    <span class="keyword">return</span> arr.filter(<span class="function"><span class="keyword">function</span>(<span class="params">element, index, self</span>)</span>&#123;  </span><br><span class="line">        <span class="keyword">if</span>(self.indexOf(element)===index)  </span><br><span class="line">            <span class="keyword">return</span> <span class="literal">true</span>;  </span><br><span class="line">        <span class="keyword">else</span>  </span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;  </span><br><span class="line">    &#125;);  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>改进：可使用arr.filter()传入函数，若indexOf返回值与本身index相等，则返回true，保留，否则返回false，删去。  </p>
+<h3 id="编程题二"><a href="#编程题二" class="headerlink" title="编程题二"></a>编程题二</h3><p>输出一个数组里可以组成三角形的方案个数。输入数组已由小到大排序比如输入: [1,2,3,4,5]，可组成三角形[2,3,4]，[2,4,5]，[3,4,5]，因此输出: 3。<br>思路：最简单的方法是暴力枚举。假设传入数组为arr，最外层循环遍历整个数组，取一条最短边；第二层循环从i+1开始取，取中间长度的边；最内层循环从j+1开始取，取最长边。之后判断两边之和大于第三边，两边之差小于第三边即可。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr=[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>];  </span><br><span class="line"><span class="keyword">var</span> count=<span class="number">0</span>;  </span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i=<span class="number">0</span>;i&lt;arr.length<span class="number">-2</span>;i++) &#123;  </span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">let</span> j=i+<span class="number">1</span>;j&lt;arr.length<span class="number">-1</span>;j++)&#123;  </span><br><span class="line">      <span class="keyword">for</span>(<span class="keyword">let</span> k=j+<span class="number">1</span>;k&lt;arr.length;k++)&#123;  </span><br><span class="line">        <span class="keyword">if</span>(arr[i]+arr[j]&gt;arr[k])&#123;  </span><br><span class="line">          count++;  </span><br><span class="line">        &#125;  </span><br><span class="line">      &#125;  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;  </span><br><span class="line"><span class="built_in">console</span>.log(count);</span><br></pre></td></tr></table></figure></p>
+<p>改进：在此基础上可以进行改进，加一些剪枝条件。如i=1，j=2，此时k会取3、4、5三个值，当k取3时，已经不满足两边之和大于第三边条件，因为数组升序，后面可不用遍历。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
 
 
           </div>
