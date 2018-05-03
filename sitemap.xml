@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://orangecsy.github.io/2018/05/03/js-vtkjs-2/</loc>
+    
+    <lastmod>2018-05-03T11:35:02.632Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://orangecsy.github.io/2018/04/11/js-vtkjs-1/</loc>
+    
+    <lastmod>2018-05-03T11:24:54.459Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://orangecsy.github.io/2018/05/02/js-tfjs-2/</loc>
     
     <lastmod>2018-05-02T12:56:55.076Z</lastmod>
@@ -19,13 +33,6 @@
     <loc>https://orangecsy.github.io/2018/04/25/js-2048/</loc>
     
     <lastmod>2018-04-27T09:34:26.668Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://orangecsy.github.io/2018/04/11/js-vtkjs-1/</loc>
-    
-    <lastmod>2018-04-22T13:59:15.971Z</lastmod>
     
   </url>
   
