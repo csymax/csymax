@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://orangecsy.github.io/"/>
-  <updated>2018-06-06T05:43:32.353Z</updated>
+  <updated>2018-06-09T14:02:02.211Z</updated>
   <id>https://orangecsy.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【phaser.js学习笔记（3）】开发H5游戏“穿越小行星”并适配微信小游戏</title>
+    <link href="https://orangecsy.github.io/2018/06/08/js-phjs-3/"/>
+    <id>https://orangecsy.github.io/2018/06/08/js-phjs-3/</id>
+    <published>2018-06-08T08:34:26.000Z</published>
+    <updated>2018-06-09T14:02:02.211Z</updated>
+    
+    <content type="html"><![CDATA[<p>这篇笔记主要记录使用phaser.js开发一个完整HTML5游戏的整个过程，并将web端程序适配到微信小游戏。  </p><h3 id="1、游戏基本架构"><a href="#1、游戏基本架构" class="headerlink" title="1、游戏基本架构"></a>1、游戏基本架构</h3><p>由于phaser社区目前仅有phaser2对微信小程序的支持，因此我选择phaser v2.6.2作为游戏的引擎。为便于开发调试，以单独的phaser.min.js方式引入文件。游戏主要分三个场景，开始场景，游戏场景和重新开始场景，index.html文件如下。<br><a id="more"></a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这篇笔记主要记录使用phaser.js开发一个完整HTML5游戏的整个过程，并将web端程序适配到微信小游戏。  &lt;/p&gt;
+&lt;h3 id=&quot;1、游戏基本架构&quot;&gt;&lt;a href=&quot;#1、游戏基本架构&quot; class=&quot;headerlink&quot; title=&quot;1、游戏基本架构&quot;&gt;&lt;/a&gt;1、游戏基本架构&lt;/h3&gt;&lt;p&gt;由于phaser社区目前仅有phaser2对微信小程序的支持，因此我选择phaser v2.6.2作为游戏的引擎。为便于开发调试，以单独的phaser.min.js方式引入文件。游戏主要分三个场景，开始场景，游戏场景和重新开始场景，index.html文件如下。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="https://orangecsy.github.io/tags/JavaScript/"/>
+    
+  </entry>
   
   <entry>
     <title>【phaser.js学习笔记（2）】适配微信小游戏</title>
