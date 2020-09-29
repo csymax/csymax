@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://orangecsy.github.io/"/>
-  <updated>2020-09-25T10:13:22.970Z</updated>
+  <updated>2020-09-29T05:55:30.106Z</updated>
   <id>https://orangecsy.github.io/</id>
   
   <author>
@@ -17,17 +17,17 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>jov论文内容修正 (Revision of paper occvis)</title>
+    <title>论文勘误 (Paper erratum)</title>
     <link href="https://orangecsy.github.io/2020/09/25/paper-occvis/"/>
     <id>https://orangecsy.github.io/2020/09/25/paper-occvis/</id>
     <published>2020-09-25T10:07:40.000Z</published>
-    <updated>2020-09-25T10:13:22.970Z</updated>
+    <updated>2020-09-29T05:55:30.106Z</updated>
     
-    <content type="html"><![CDATA[<p>occvis 论文中公式 1 应为<br>$$<br>Slerp(t)=\frac{sin((1-t))\Omega ))}{sin\Omega }p_{0}+\frac{sint\Omega }{sin\Omega }p_{1}<br>$$<br>此外，Fig. 10 应为 2016 年 1 月，3 月，7 月和 3 月的图像。<br><a id="more"></a><br>Formula 1 in occvis paper should be<br>$$<br>Slerp(t)=\frac{sin((1-t))\Omega ))}{sin\Omega }p_{0}+\frac{sint\Omega }{sin\Omega }p_{1}<br>$$<br>In addition, Fig. 10 should be the images of January, March, July and March of 2016.</p>]]></content>
+    <content type="html"><![CDATA[<p>论文题目：<a href="https://dl.acm.org/doi/10.1007/s12650-018-00545-2" target="_blank" rel="noopener">OccVis: a visual analytics system for occultation data</a><br>论文中公式 1 应为<br>$$<br>Slerp(t)=\frac{sin((1-t))\Omega ))}{sin\Omega }p_{0}+\frac{sint\Omega }{sin\Omega }p_{1}<br>$$<br>此外，Fig. 10 应为 2016 年 1 月，3 月，7 月和 3 月的图像。<br><a id="more"></a><br>Paper title: <a href="https://dl.acm.org/doi/10.1007/s12650-018-00545-2" target="_blank" rel="noopener">OccVis: a visual analytics system for occultation data</a><br>Formula 1 in occvis paper should be<br>$$<br>Slerp(t)=\frac{sin((1-t))\Omega ))}{sin\Omega }p_{0}+\frac{sint\Omega }{sin\Omega }p_{1}<br>$$<br>In addition, Fig. 10 should be the images of January, March, July and March of 2016.</p>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;occvis 论文中公式 1 应为&lt;br&gt;$$&lt;br&gt;Slerp(t)=\frac{sin((1-t))\Omega ))}{sin\Omega }p_{0}+\frac{sint\Omega }{sin\Omega }p_{1}&lt;br&gt;$$&lt;br&gt;此外，Fig. 10 应为 2016 年 1 月，3 月，7 月和 3 月的图像。&lt;br&gt;
+      &lt;p&gt;论文题目：&lt;a href=&quot;https://dl.acm.org/doi/10.1007/s12650-018-00545-2&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;OccVis: a visual analytics system for occultation data&lt;/a&gt;&lt;br&gt;论文中公式 1 应为&lt;br&gt;$$&lt;br&gt;Slerp(t)=\frac{sin((1-t))\Omega ))}{sin\Omega }p_{0}+\frac{sint\Omega }{sin\Omega }p_{1}&lt;br&gt;$$&lt;br&gt;此外，Fig. 10 应为 2016 年 1 月，3 月，7 月和 3 月的图像。&lt;br&gt;
     
     </summary>
     
